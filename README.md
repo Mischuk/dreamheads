@@ -1,6 +1,4 @@
 # [Dream Heads](http://frontend.watch/dreamheads)
-
-## Description
 * Based on [Gulp](http://gulpjs.com/)
 * [Pug](https://pugjs.org) templates + cached changes/posthtml
 * [Stylus](http://stylus-lang.com/) + sourcemaps/rupture/jeet/postcss
