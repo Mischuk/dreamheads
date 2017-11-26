@@ -1,0 +1,17 @@
+*.swp
+*~
+*.iws
+*.log
+*.zip
+*.todo
+.project
+.DS_Store
+.sass-cache
+.idea
+package-lock.json
+pass.js
+node_modules/
+PSD/
+bower_components/
+tasks/
+tmp/

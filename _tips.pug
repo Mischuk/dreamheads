@@ -1,0 +1,50 @@
+//- Assignment
+- var stringVariable = 'String'
+- var integerVariable = 10
+- var arrayVariable = ['Pug', 'Dancer', 'Cake']
+- var objectVariable = { name: 'Lancelot' }
+
+//- Concatentation
+- var combinedVariable = 'Pug' + stringVariable
+
+//- Interpolation
+- var title = 'Pug Smootie'
+- var star = 'Prime Minister Pugadorian'
+h2= title
+p #{star} is heading to the US!
+
+//- Iterations
+each value in arrayVariable
+  p= value
+
+each value in ['Pug Life', 'Pugspace', 'Pug Blues']
+  p= value
+
+each value, index in ['Pug Riding', 'Pug Aliens']
+  p= index + ': ' + value
+
+
+//- Mixins
+//- Declaration
+mixin pugQuote
+  blockquote As a pug, I often live the high life. Peeps look at me and think, "Dang brah, I need to beef my badonk like that mafa right there". Shoot they fo jels and that's just the kibble on the bits for me.
+  cite Prince Diggity
+
+//- Usage
++pugQuote
+
+//- Declaration with parameters
+mixin pugUser(name, age)
+  h2= name
+  if age
+    h3= age
+
+//- Usage with parameters
++pugUser('Bubbles', 2)
+
+// Stylus
+// retinaSprites($retina_groups);
+// sprite($we_2x)
+// retinaSprite($we_group)
+
+// +breadcrumb(['home', 'catalog', 'current'])

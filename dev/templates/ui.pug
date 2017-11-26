@@ -1,0 +1,48 @@
+doctype html
+html(lang="ru").no-js
+  head
+    title UI modules
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="msapplication-tap-highlight" content="no")
+    link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel="stylesheet" type="text/css")
+    link(rel="stylesheet" href="css/vendor.css")
+    link(rel="stylesheet" href="css/app.css")
+    script(async src="js/modernizr.js")
+  body.ui
+    include _content
+    include _mixins
+    main
+      section#typography
+        h2 Typography
+      section#forms
+        h2 Forms
+      section
+        h2 Buttons
+      section
+        h2 Tables
+      section
+        h2 Breadcrumbs
+      section
+        h2 Pagination
+      section
+        h2 Progress Bar
+      section
+        h2 Responsive video
+      section
+        h2 Tabs
+      section
+        h2 Modal windows
+      section
+        h2 Accordion
+      section
+        h2 Dropdown
+      section
+        h2 Tooltips
+      section
+        h2 Scrollbar
+    // Javascript
+    script(src="js/jquery-3.2.1.min.js")
+    script(src="js/vendor.js")
+    script(src="js/app.js")

@@ -1,0 +1,10 @@
+extends _layout_index
+
+block settings
+  - var title = 'Главная'
+  - var user_authorised = false
+
+block content
+  +breadcrumb(['home', 'catalog', 'contacts'])
+  h1 Hello, world!
+
