@@ -1,0 +1,299 @@
+.m_contacts
+  clearfix()
+  height 100%
+  position relative
+  @media screen and (min-width: 568px)
+    display table
+    width 100%
+  .back-to-list
+    anim()
+    position absolute
+    left 0
+    top 50px
+    width 45px
+    height 45px
+    z-index 15
+    background #1a1717 url("../images/left-arrow.png") no-repeat 50% 50%
+    transform translateX(-100%)
+    @media screen and (min-width: 768px) and (min-height: 768px)
+      top 150px
+    &:hover
+      background-color #1a1717 + 15%
+    &.is-open
+      transform translateX(0%)
+    a
+      display block
+      width 100%
+      height 100%
+  .contacts-list,
+  .contacts-form
+    @media screen and (min-width: 568px)
+      // float left
+      // height 100%
+      width 50%
+      display table-cell
+      vertical-align middle
+  .contacts-list
+    position relative
+    .map-layout
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      .map-bg
+        @media screen and (min-width: 568px)
+          position absolute
+          left 0
+          top 0
+          width 100%
+          height 100%
+          background rgba(37, 37, 37, .8)
+      #map
+        width 100%
+        height 100%
+        a[href^="http://maps.google.com/maps"]
+          display none !important
+        a[href^="https://maps.google.com/maps"]
+          display none !important
+        .gmnoprint a,
+        .gmnoprint span,
+        .gm-style-cc
+          display none
+        .gmnoprint div
+          background none !important
+
+    .list
+      position relative
+      z-index 10
+      background rgba(37, 37, 37, .8)
+      width 100%
+      padding 30px 0
+      text-align center
+      @media screen and (min-width: 568px)
+        background none
+      a
+        anim()
+        color #b1b1b1
+        &:hover
+          color #fff
+      .locate
+        font-size 20px
+        color #b1b1b1
+        @media screen and (min-width: 1024px)
+          font-size 30px
+      .map-open
+        padding 5px 0
+        a
+          text-decoration underline
+          &:hover
+            text-decoration none
+      ul
+        display inline-block
+        text-align left
+        margin-top 15px
+        @media screen and (min-width: 1024px)
+          margin-top 45px
+      li
+        padding-left 35px
+        @media screen and (min-width: 768px) and (min-height: 768px)
+          margin-top 10px
+        a
+          display inline-block
+          vertical-align middle
+          padding 5px 0
+          position relative
+          &:after
+            content ''
+            position absolute
+            left -35px
+            top 50%
+            background-image url("../images/sprite.png")
+            retina()
+          &.icon-tel
+            cursor pointer
+            &:after
+              width 22px
+              height 22px
+              margin-top -(@height/2)
+              background-position 0 0
+            &:hover:after
+              background-position 0 -150px
+          &.icon-viber
+            &:after
+              width 21px
+              height 21px
+              margin-top -(@height/2)
+              background-position -50px 0
+            &:hover:after
+              background-position -50px -150px
+          &.icon-telegram
+            &:after
+              width 22px
+              height 20px
+              margin-top -(@height/2)
+              background-position -100px 0
+            &:hover:after
+              background-position -100px -150px
+          &.icon-skype
+            &:after
+              width 24px
+              height 24px
+              margin-top -(@height/2)
+              background-position -150px 0
+            &:hover:after
+              background-position -150px -150px
+          &.icon-email
+            &:after
+              width 22px
+              height 22px
+              margin-top -(@height/2)
+              background-position -200px 0
+            &:hover:after
+              background-position -200px -150px
+          &.icon-facebook
+            &:after
+              width 14px
+              height 22px
+              margin-top -(@height/2)
+              background-position -250px 0
+              margin-left 4px
+            &:hover:after
+              background-position -250px -150px
+          &.icon-instagram
+            &:after
+              width 22px
+              height 21px
+              margin-top -(@height/2)
+              background-position -300px 0
+            &:hover:after
+              background-position -300px -150px
+          &.icon-requisites
+            &:after
+              width 18px
+              height 23px
+              margin-top -(@height/2)
+              background-position -350px 0
+              margin-left 2px
+            &:hover:after
+              background-position -350px -150px
+
+  .contacts-form
+    background #111
+    padding 30px 0
+    color #b3b3b3
+    form
+      padding 0 30px
+      max-width 420px
+      margin-left auto
+      margin-right auto
+    .title
+      font-size 24px
+      text-align left
+      @media screen and (min-height: 900px)
+        font-size 40px
+        margin-bottom 40px
+    .form-row
+      margin-top 15px
+      > label
+        display block
+        text-align left
+        > .label
+          display block
+          font-size 16px
+          line-height 1
+          padding 5px 0
+          @media screen and (min-height: 900px)
+            font-size 18px
+            padding 10px 0
+        > .input
+          input,
+          textarea
+            transition border-color .25s ease-in
+            width 100%
+            padding 15px
+            font-size 16px
+            line-height 1
+            background #2c2c2c
+            border 1px solid #2c2c2c
+            font-family: 'Roboto Condensed', sans-serif;
+            color #b3b3b3
+            cursor pointer
+            box-shadow none
+            -webkit-appearance none
+            -moz-appearance none
+            appearance none
+            outline none
+            @media screen and (min-width: 568px)
+              padding 10px
+            @media screen and (min-height: 900px)
+              padding 15px
+              font-size 18px
+            &:focus
+              border-color #484848
+              cursor text
+          textarea
+            resize none
+            min-height 100px
+      .bottom
+        clearfix()
+        @media screen and (min-height: 900px)
+          margin-top 30px
+        .submit
+          @media screen and (min-width: 420px)
+            float right
+          @media screen and (min-width: 568px) and (max-width: 767px)
+            float none
+          button
+            anim()
+            border 2px solid #d1ab59
+            background none
+            color #d1ab59
+            font-size 18px
+            padding 10px 45px
+            @media SM
+              padding 10px 25px
+            @media MD
+              padding 10px 45px
+            &:hover
+              background #d1ab59
+              color #252525
+            &:active
+              background #d1ab59 - 25%
+              border-color #d1ab59 - 25%
+        .attach
+          margin-bottom 15px
+          @media screen and (min-width: 420px)
+            float left
+            margin-bottom 0
+            line-height 45px
+          @media screen and (min-width: 568px) and (max-width: 767px)
+            float none
+          label
+            display inline-block
+            vertical-align middle
+            position relative
+            cursor pointer
+            &:hover
+              .attach-icon
+                background-position -400px -150px
+              .attach-label
+                color #fff
+            .attach-inp
+              width 0
+              height 0
+              overflow hidden
+            .attach-icon
+              background: url('../images/sprite.png') no-repeat -400px 0;
+              width: 26px;
+              height: 23px;
+              position absolute
+              left 0
+              top 50%
+              margin-top -(@height/2)
+              retina()
+            .attach-label
+              margin-left 35px
+              color #d1ab59
+              text-decoration underline
+              line-height 23px

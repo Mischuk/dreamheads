@@ -81,9 +81,9 @@ var spritesmith     = require('gulp.spritesmith');
 gulp.task('serve', function() {
   browserSync.init({
     server: './app',
-    ui: false,
+    // ui: false,
     port: 8080,
-    open: false,
+    // open: false,
     reloadOnRestart: true,
     notify: false
   });

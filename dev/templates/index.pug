@@ -1,71 +1,485 @@
-- var project = "Project"
-
--
-  var list = [
-    { title: 'Главная', url: 'home.html' }
-  ]
-
 doctype html
-html(lang="ru")
-head
-  title= project
-  meta(charset="UTF-8")
-  meta(http-equiv="X-UA-Compatible" content="IE=edge")
-  meta(name="viewport" content="width=device-width, initial-scale=1")
-  meta(name="msapplication-tap-highlight" content="no")
-  link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel="stylesheet" type="text/css")
-  style.
-    body {height: 100%; font-family: 'Roboto', sans-serif;font-size:  18px;margin: 0;background: #fcfcfc;}
-    h1{font-family: 'Roboto', cursive;background:#424242;padding: 20px 20px; color: #fff; margin: 0; margin-bottom: 10px; box-shadow: 0 0 5px rgba(0,0,0,.5); padding-right: 120px; cursor: default; }
-    ul {margin: 0;padding-left: 0;margin-left:  20px;overflow:  hidden;}
-    li {list-style:  none;}
-    a {
-      color: #424242;
-      text-decoration: none;
-      display: inline-block;
-      padding: 5px 0;
-    }
-    a:hover {
-      color: #2196f3;
-      text-decoration: underline;
-    }
-    a:active {
-      color: #ee6e73;
-    }
-    .board{
-      transition: all .25s ease-in;
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding: 15px;
-      cursor: default;
-    }
-    .board a:hover{
-      opacity: .9;
-    }
-    @media screen and (max-width: 768px) {
-      h1{
-        padding: 15px 10px;
-        font-size: 20px;
-        margin-bottom: 0;
-        border-bottom: none;
-        padding-right: 100px;
+html(lang="ru").no-js
+  head
+    title Dream heads
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="msapplication-tap-highlight" content="no")
+    link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="stylesheet" href="css/vendor.css")
+    link(rel="stylesheet" href="css/app.css")
+    //- script(async src="js/modernizr.js")
+
+  body
+    #works
+      .m_works
+        .work-desc
+          .helper
+            .works-counter
+              <span class="current">01</span>/10
+            .works-info
+              .number 01
+              .titles
+                h2.current Хлеб и Вино
+                h2 Идеи вашего дома
+                h2 Playboy
+                h2 ВЭБ
+                h2 ТРЦ Весна
+                h2 Сбербанк
+                h2 Амиксин
+                h2 Ваби-Саби
+                h2 Eventbooking
+                h2 Heineken
+              .descriptions
+                .item.current Дизайн и разработка сайта современного магазина-бара.
+                .item
+                  p Дизайн и разработка сайта старейшего российского журнала по ремонту и оформлению интерьера.
+                  p Проект выполнен для агентства: <br>Burda Media
+                .item
+                  p Разработка сайта легендарного мужского журнала.
+                  p Проект выполнен для агентства: <br>Burda Media
+                .item
+                  p Дизайн и разработка мобильной 3D игры нового многоцелевого вертолёта Ка-62.
+                  p Проект выполнен для агентства: <br>Great Gonzo
+                .item
+                  p Разработка сайта и интерактивных стоек для торгового центра.
+                  p Проект выполнен для агентства: <br>Nectarin
+                .item
+                  p Дизайн и разработка мобильной корпоративной газеты для сотрудников банка.
+                  p Проект выполнен для агентства: <br>Great Gonzo
+                .item
+                  p Разработка сайта противовирусного препарата.
+                  p Проект выполнен для агентства: <br>Deluxe Interactive
+                .item Дизайн и разработка сайта доставки суши.
+                .item Разработка маркетплейса услуг для мероприятий
+                .item
+                  p Разработка промо сайта с интеграцией смс-механики.
+                  p Проект выполнен для агентства: <br>Boost Team
+              .links
+                a(class="current" href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+                a(href="#") Перейти на сайт
+            .works-nav
+              ul
+                li: a(id="w-1" class="current" href="#") 1
+                li: a(id="w-2" href="#") 2
+                li: a(id="w-3" href="#") 3
+                li: a(id="w-4" href="#") 4
+                li: a(id="w-5" href="#") 5
+                li: a(id="w-6" href="#") 6
+                li: a(id="w-7" href="#") 7
+                li: a(id="w-8" href="#") 8
+                li: a(id="w-9" href="#") 9
+                li: a(id="w-10" href="#") 10
+        .work-preview
+          .image(class="current" style="background-image: url('images/work-1.jpg')")
+          .image(style="background-image: url('images/work-2.jpg')")
+          .image(style="background-image: url('images/work-3.jpg')")
+          .image(style="background-image: url('images/work-4.jpg')")
+          .image(style="background-image: url('images/work-5.jpg')")
+          .image(style="background-image: url('images/work-6.jpg')")
+          .image(style="background-image: url('images/work-7.jpg')")
+          .image(style="background-image: url('images/work-8.jpg')")
+          .image(style="background-image: url('images/work-9.jpg')")
+          .image(style="background-image: url('images/work-10.jpg')")
+        .work-layout
+    #services-nav
+      .services-progress
+        .progress-bar
+          .normal
+          .animate
+        ul
+          li#s-projecting: a(class="dot current" id="btn-section-3" href="#")
+          li#s-design: a(class="dot" id="btn-section-4" href="#")
+          li#s-webdev: a(class="dot" id="btn-section-5" href="#")
+          li#s-mobdev: a(class="dot" id="btn-section-6" href="#")
+          li#s-backend: a(class="dot" id="btn-section-7" href="#")
+    #services
+      .serv-graphs
+        .services-images
+          .item: #s1
+          .item: #s2
+          .item: #s3
+          .item: #s4
+          .item: #s5
+
+
+
+    #header
+      .wrapper
+        .logo: a(href="#"): img(src="images/logo.png" alt="")
+        .btn-nav: a(href="#"): span
+        nav
+          ul
+            li: button(id="main-nav-prods"): span Продакшн
+            li: button(id="main-nav-servs"): span Услуги
+            li: button(id="main-nav-works"): span Портфолио
+            li: button(id="main-nav-contacts"): span Контакты
+    #main
+      // Lead screen
+      section.section.fp-noscroll
+        .m_lead
+          .shapes
+            .sun(data-parallaxify-range-x="-10" data-parallaxify-range-y="-10")
+              .core: img(src="images/sun-core.png" alt="")
+              .lights: img(src="images/sun-lights.png" alt="")
+            .layers
+              .layer.low: img(src="images/1.png" alt="")
+              .layer.bot: img(src="images/2.png" alt="")
+              .layer.mid: img(src="images/3.png" alt="")
+              .layer.top: img(src="images/4.png" alt="")
+          .text
+            .logo
+            h1 Лучший диджитал аутсорс продакшн <br>для агенств интеграторов и стартапов
+          .mouse-down
+      // Productions
+      section.section.fp-noscroll.prod-index
+        .m_productions
+          .wrapper
+            .item
+              a(href="http://www.cossa.ru/ok3/81540/" target="_blank")
+                .icon
+                  #prod-1
+                .label Премия Рунета <br>2013
+            .item
+              a(href="http://www.ruward.ru/mobile-ratings/apps4all-2016-1/" target="_blank")
+                .icon
+                  #prod-2
+                .label 17 место в рейтинге <br>мобильных разработчиков <br>2016
+            .item
+              a(href="https://tagline.ru/outsource-rating/" target="_blank")
+                .icon
+                  #prod-3
+                .label 9 место в рейтинге <br>tagline в 2017ом
+            .item
+              .icon
+                #prod-4
+              .label 15 специалистов <br>в штате
+            .item
+              .icon
+                #prod-5
+              .label Работаем  по NDA
+            .item
+              .icon
+                #prod-6
+              .label 5 лет на рынке
+
+      // Services
+      section.section
+        .m_services
+          .wrapper
+            .text
+              .number 01
+              h2 Проектирование
+              p Разрабатываем подробные технические задания и интерактивные прототипы в Axure.
+        .pricelist: a(href="#"): span Наши цены
+      section.section
+        .m_services
+          .wrapper
+            .text
+              .number 02
+              h2 Дизайн
+              p Разрабатываем дизайн интерфейса адаптивных сайтов и мобильных приложений.
+        .pricelist: a(href="#"): span Наши цены
+      section.section
+        .m_services
+          .wrapper
+            .text
+              .number 03
+              h2 Веб разработка
+              p Разрабатываем адаптивные интернет-магазины, промо-сайты, лэндинги, порталы. <br>Основной стек: php7, 1С-Битрикс, Yii2, jquery, angularjs, pug, scss.
+        .pricelist: a(href="#"): span Наши цены
+      section.section
+        .m_services
+          .wrapper
+            .text
+              .number 04
+              h2 Мобильная разработка
+              p Разрабатываем нативные мобильные приложения и 3d игры. <br>Основной стек: Java, Objective-C, Unity3d.
+        .pricelist: a(href="#"): span Наши цены
+      section.section
+        .m_services
+          .wrapper
+            .text
+              .number 05
+              h2 Интеграции
+              p Проводим интеграцию с любыми внешними системами по API, в том числе - CRM/ERP, платежными системами, социальными сетями, sms/e-mail сервисами, билетными сервисами, gps трекерами и даже космическими спутниками.
+        .pricelist: a(href="#"): span Наши цены
+      // Portfolio
+      section.section
+      section.section
+      section.section
+      section.section
+      section.section
+      section.section
+      section.section
+      section.section
+      section.section
+      section.section
+
+      // Contacts
+      section.section.fp-auto-height-responsive
+        .m_contacts
+          .contacts-list
+            .map-layout
+              #map
+              .map-bg
+            .list
+              .locate Москва, ул. Новодмитровская 2к1
+              .map-open: a(id="toggle-map" href="#") Посмотреть на карте
+              ul
+                li: a(class="icon-tel"        href="tel:+74956789999") + 7 (495) 678 99 99
+                li: a(class="icon-tel"        href="tel:+79267799800") + 7 (926) 77 99 800
+                li: a(class="icon-viber"      href="https://api.whatsapp.com/send?phone=79127799800") + 7 (926) 77 99 800
+                li: a(class="icon-telegram"   href="http://telegram.me/dreamheads_ru") dreamheads_ru
+                li: a(class="icon-skype"      href="skype:this_is_my_dream_?chat") this_is_my_dream_
+                li: a(class="icon-email"      href="mailto:info@dreamheads.ru") info@dreamheads.ru
+                li: a(class="icon-facebook"   href="https://www.facebook.com/Dreamheads/" target="_blank") dreamheads_ru
+                li: a(class="icon-instagram"  href="https://www.instagram.com/dreamheads_ru/" target="_blank") dreamheads_ru
+                li: a(class="icon-requisites" href="#") Реквизиты
+            .back-to-list: a(href="#")
+          .contacts-form
+            form(name="lead-form")
+              .title Свяжитесь с нами:
+              .form-row
+                label
+                  .label Ваше имя
+                  .input
+                    input(type="text" placeholder="" autocomplete="off" name="form-username")
+              .form-row
+                label
+                  .label Компания
+                  .input
+                    input(type="text" placeholder="" autocomplete="off" name="form-company")
+              .form-row
+                label
+                  .label Ваш номер телефона или email
+                  .input
+                    input(type="text" placeholder="" autocomplete="off" name="form-contact")
+              .form-row
+                label
+                  .label Ваше сообщение
+                  .input
+                    textarea(placeholder="" name="form-message")
+              .form-row
+                .bottom
+                  .attach
+                    label(for="attach-form-input" onclick="")
+                      .attach-inp
+                        input(type="file" id="attach-form-input" name="attach-form-input")
+                      .attach-icon
+                      .attach-label Приложить файл
+                  .submit
+                    button(type="submit") Отправить
+
+
+    // Javascript
+    script(src="js/jquery-3.2.1.min.js")
+    script(src="js/vendor.js")
+    //- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ_pqZOmCOJZ2acwP3OYbAZDF89BEVe3k&callback=initMap" async defer)
+    //- script.
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 55.805024, lng: 37.589075},
+          zoom: 17,
+          scrollwheel: false,
+          navigationControl: false,
+          mapTypeControl: false,
+          scaleControl: false,
+          draggable: true,
+          disableDefaultUI: true,
+          styles: [
+            {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e9e9e9"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 29
+                        },
+                        {
+                            "weight": 0.2
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 18
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        },
+                        {
+                            "lightness": 21
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#dedede"
+                        },
+                        {
+                            "lightness": 21
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "saturation": 36
+                        },
+                        {
+                            "color": "#333333"
+                        },
+                        {
+                            "lightness": 40
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f2f2f2"
+                        },
+                        {
+                            "lightness": 19
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#fefefe"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#fefefe"
+                        },
+                        {
+                            "lightness": 17
+                        },
+                        {
+                            "weight": 1.2
+                        }
+                    ]
+                }
+          ]
+
+        });
+
+        var marker = new google.maps.Marker({
+            position: {lat: 55.805024, lng: 37.589075},
+            map: map,
+            icon: 'images/marker.png'
+        });
       }
-      ul{
-        margin-left: 10px;
-        margin-top: 10px;
-      }
-      a{
-        font-size: 16px;
-      }
-      .board{padding: 5px;}
-    }
-body
-  h1= project
-  .board
-    a(href="ui.html" target="_blank" title="View UI"): img(src="images/view.svg" alt="")
-    a(href="http://github.com/Mischuk" target="_blank" title="Project on Github"): img(src="images/download.svg" alt="")
-  ul
-    each value in list
-      li
-         a(target="_blank" href= value.url) #{value.title}
+    script(src="js/app.js")

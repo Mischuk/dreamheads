@@ -1,6 +1,3 @@
-.container
-  height 100%
-
 .wrapper
   clearfix()
   position relative
@@ -11,40 +8,35 @@
   margin-left auto
   margin-right auto
 
-main
-  display block
-  max-width $wrapper
-  width 100%
-  padding 0 15px
-  margin 0 auto
+body
+  background #111111
+  color #fff
+  text-align center
+
+.iScrollVerticalScrollbar.iScrollLoneScrollbar
+  opacity 0 !important
+.fp-auto-height-responsive.fp-section,
+.fp-auto-height-responsive .fp-slide,
+.fp-auto-height-responsive .fp-tableCell
+  @media screen and (max-height: 679px)
+    height auto !important
+
+.prod-index
+  background #111
   position relative
-
-html.flexbox
-  body
-    display flex
-    min-height 100vh
-    flex-direction column
-  .container
-    flex 1
-
-
-.ui
-  font-family: 'Roboto', sans-serif;
-  font-size:  18px;
-  margin: 0;
-  background: #e4e4e4 + 25%
-  main
-    clearfix()
-    max-width none
-    padding 0
-    section
-      width 25%
-      height 290px
-      line-height 290px
-      text-align center
-      float left
-      border 1px solid black
-      h2
-        display inline-block
-        vertical-align middle
-
+  z-index 10
+@media screen and (max-width: 420px)
+  .fp-viewing-7,
+  .fp-viewing-8,
+  .fp-viewing-9,
+  .fp-viewing-10,
+  .fp-viewing-11,
+  .fp-viewing-12,
+  .fp-viewing-13,
+  .fp-viewing-14,
+  .fp-viewing-15,
+  .fp-viewing-16
+    #header .logo
+      opacity 0
+      visibility hidden
+      transition-delay 0
