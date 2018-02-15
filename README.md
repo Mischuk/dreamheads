@@ -1,4 +1,4 @@
-# [Dream Heads](http://frontend.watch/dreamheads)
+# [Dream Heads](http://frontend.watch/dh)
 * Based on [Gulp](http://gulpjs.com/)
 * [Pug](https://pugjs.org) templates + cached changes/posthtml
 * [Stylus](http://stylus-lang.com/) + sourcemaps/rupture/jeet/postcss
@@ -46,9 +46,7 @@ frontend/                           # Project
 │   │   ├── _content.pug            # Static data
 │   │   ├── _layout_*.pug           # Extend layout for pages
 │   │   ├── _mixins.pug             # Mixins for pug
-│   │   ├── index.pug               # List of templates
-│   │   ├── ui.pug                  # Project's UI
-│   │   └── *.pug                   # Templates
+│   │   └── index.pug               # Homepage
 │   │
 │   └── static                      # Static files
 │       ├── fonts                   # Fonts

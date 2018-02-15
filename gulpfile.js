@@ -158,11 +158,12 @@ gulp.task('serve', function() {
         }))
         .pipe(pug({
           doctype: 'HTML',
-          pretty: false,
+          pretty: true,
           locals: YOUR_LOCALS
         }))
         .pipe(posthtml(templates_options.posthtml.plugins, templates_options.posthtml.options))
         .pipe(prettify(templates_options.htmlPrettify))
+        .pipe(htmlnano())
         .pipe(gulp.dest('./app/'))
         .pipe(reload({stream:true}));
   });

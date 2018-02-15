@@ -1,7 +1,8 @@
 .m_productions
+  visibility hidden
   // Borders
-  @media screen and (min-height: 900px) and (min-width: 1600px)
-    padding-top 100px
+  @media screen and (min-width: 1240px)
+    padding-top 100rem
   .item
     opacity 0
     transition all .5s ease-in
@@ -12,8 +13,9 @@
         transition-delay .5s
         transform scale(1)
       .label
-        transition-delay 1s
-        opacity 1
+       transition-delay .8s
+       opacity 1
+    /*
     @media screen and (max-width: 567px) and (min-height: 380px)
       &:nth-child(2),
       &:nth-child(4),
@@ -49,6 +51,7 @@
         &:nth-child(5),
         &:nth-child(6)
           border-color #2e2e2e
+    */
   // end Borders
   .item
     float left
@@ -77,8 +80,8 @@
       padding-bottom 15px
     @media screen and (min-width: 1024px) and (min-height: 740px)
       padding 30px 0
-    @media screen and (min-width: 1600px) and (min-height: 900px)
-      padding 60px 0
+    @media screen and (min-width: 1240px)
+      padding 60rem 0
     a
       color #fff
       &:hover
@@ -93,8 +96,8 @@
         height 80px
       @media screen and (min-height: 640px)
         height 100px
-      @media screen and (min-width: 1600px) and (min-height: 900px)
-        height 135px
+      @media screen and (min-width: 1240px)
+        height 135rem
       > div
         max-height 100%
         max-width 100%
@@ -105,19 +108,20 @@
             height 80px
           @media screen and (min-height: 640px)
             height 100px
-          @media screen and (min-width: 1600px) and (min-height: 900px)
-            height 135px
+          @media screen and (min-width: 1240px)
+            height 135rem
     .label
       color #b1b1b1
       font-size 13px
       padding-top 10px
       opacity 0
-      transition opacity 1s ease-in
+      transition all 1s ease-in
       @media screen and (min-height: 640px) and (min-width: 375px)
         font-size 15px
       @media screen and (min-height: 768px) and (min-width: 768px)
         font-size 18px
       @media screen and (min-width: 1024px) and (min-height: 740px)
         padding-top 25px
-      @media screen and (min-width: 1600px) and (min-height: 900px)
-        padding-top 35px
+      @media screen and (min-width: 1240px)
+        font-size 18rem
+        padding-top 35rem

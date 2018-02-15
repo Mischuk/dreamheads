@@ -1,12 +1,14 @@
 .m_lead
   position relative
-  background #111111 url("../images/lead-bg.png") no-repeat 50%
-  background-size cover
   height 100%
-  @media screen and (max-height: 380px)
-    display table
-    width 100%
+  background #111
+  display table
+  width 100%
+  z-index 10
+  @media screen and (min-width: 1240px)
+    display block
   .mouse-down
+    opacity 0
     @media screen and (max-width: 1024px)
       display none !important
     @media screen and (max-height: 700px)
@@ -22,137 +24,22 @@
       z-index 100
       cursor pointer
       retina()
-      @media screen and (min-width: 1900px) and (min-height: 1050px)
-        bottom 100px
+      @media screen and (min-width: 1240px)
+        bottom 100rem
       &:hover
         background-position -50px -50px
   .shapes
+    opacity 0
     position absolute
     left 0
     bottom 0
     width 100%
     height 100%
     z-index 10
-    @media screen and (max-height: 380px)
+    @media screen and (max-height: 414px)
       display none !important
-    @media screen and (min-width: 1650px) and (min-height: 992px)
-      bottom -70px
-    @media screen and (min-width: 1800px) and (min-height: 900px)
-      bottom -70px
-    .sun
-      transition transform .7s linear
-      position absolute
-      left 50%
-      width 116px
-      height 116px
-      margin-left -(@width/2)
-      bottom 50px
-      body.fp-viewing-1 &
-        transform scale(0.7) translateY(100px)
-        @media screen and (min-width: 1600px) and (min-height: 768px)
-          transform scale(0.9) translateY(300px)
-      @media screen and (min-width: 360px)
-        bottom 20px
-      @media screen and (min-width: 410px)
-        bottom 30px
-      @media screen and (min-width: 460px)
-        bottom 90px
-      @media screen and (min-height: 380px)  and (min-width: 550px)
-        bottom 80px
-      @media screen and (min-height: 400px)  and (min-width: 660px)
-        bottom 100px
-      @media screen and (min-height: 400px)  and (min-width: 720px)
-        bottom 110px
-      @media screen and (min-height: 600px)  and (min-width: 768px)
-        bottom 140px
-      @media screen and (min-height: 800px)  and (min-width: 768px)
-        width 140px
-        height 140px
-        margin-left -70px
-      @media screen and (min-height: 992px)  and (min-width: 768px)
-        width 220px
-        height 220px
-        margin-left -110px
-        bottom 80px
-      @media screen and (min-width: 880px) and (min-height: 640px)
-        width 220px
-        height 220px
-        margin-left -110px
-        bottom 120px
-      @media screen and (min-width: 992px) and (min-height: 640px)
-        bottom 140px
-      @media screen and (min-width: 992px) and (min-height: 1300px)
-        width 470px
-        height 469px
-        margin-left -235px
-        bottom -20px
-      @media screen and (min-width: 1100px) and (min-height: 768px)
-        bottom 180px
-      @media screen and (min-width: 1280px) and (min-height: 768px)
-        bottom 250px
-      @media screen and (min-width: 1400px) and (min-height: 768px)
-        bottom 300px
-      @media screen and (min-width: 1275px) and (min-height: 900px)
-        bottom 260px
-      @media screen and (min-width: 1400px) and (min-height: 900px)
-        bottom 300px
-      @media screen and (min-width: 1500px) and (min-height: 900px)
-        bottom 320px
-      @media screen and (min-width: 1800px) and (min-height: 900px)
-        bottom 220px
-        width 470px
-        height 469px
-        margin-left -235px
-      @media screen and (min-width: 1900px) and (min-height: 900px)
-        bottom 250px
-      @media screen and (min-width: 1360px) and (min-height: 992px)
-        bottom 250px
-      @media screen and (min-width: 1680px) and (min-height: 992px)
-        bottom 390px
-      @media screen and (min-width: 1650px) and (min-height: 950px)
-        width 470px
-        height 469px
-        margin-left -235px
-        bottom 220px
-      @media screen and (min-width: 1650px) and (min-height: 1050px)
-        bottom 210px
-      @media screen and (min-width: 1800px) and (min-height: 1050px)
-        bottom 230px
-      @media screen and (min-width: 1900px) and (min-height: 1050px)
-        bottom 270px
-        margin-left -245px
-
-      img
-        display block
-        margin-left auto
-        margin-right auto
-        max-width 100%
-        max-height 100%
-      @keyframes lights-anim
-        0%
-          transform rotate(0deg)
-        100%
-          transform rotate(360deg)
-      @keyframes core-anim
-        0%
-          transform rotate(0deg)
-        100%
-          transform rotate(-360deg)
-      .lights
-        animation lights-anim 40s linear infinite
-      .core
-        animation core-anim 30s linear infinite
-      .lights,
-      .core
-        position absolute
-        left 0
-        top 0
-        width 100%
-        height 100%
-        img
-          width 100%
-          height 100%
-
+    @media screen and (min-width: 1240px)
+      bottom -70rem
     .layers
       position absolute
       left 0
@@ -161,18 +48,18 @@
       height 100%
       .layer
         position absolute
-        left 0
+        left -1%
         bottom 0
-        width 100%
+        width 102%
         img
           width 100%
       .top
         bottom -40px
         transition transform .4s linear
         body.fp-viewing-1 &
-          transform translateY(0px)
+          transform translateY(80px)
           @media screen and (min-width: 1024px) and (min-height: 768px)
-            transform translateY(0px)
+            transform translateY(80px)
       .mid
         bottom -40px
         transition transform .5s linear
@@ -203,26 +90,16 @@
   .text
     position relative
     z-index 20
-    padding-top 100px
-    @media screen and (max-height: 440px)
-      padding-top 60px
-    @media screen and (max-height: 400px)
-      padding-top 30px
-    @media screen and (max-height: 380px)
-      display table-cell
-      vertical-align middle
-    @media screen and (min-height: 568px)
-      padding-top 150px
-    @media screen and (min-height: 400px)  and (min-width: 660px)
-      padding-top 30px
-    @media screen and (min-width: 992px) and (min-height: 900px)
-      padding-top 100px
-    @media screen and (min-width: 992px) and (min-height: 1024px)
-      padding-top 150px
-    @media screen and (min-width: 1200px) and (min-height: 900px)
-      padding-top 30px
-    @media screen and (min-width: 1360px) and (min-height: 992px)
-      padding-top 50px
+    display table-cell
+    vertical-align middle
+    @media screen and (min-width: 600px) and (min-height: 415px)
+      padding-bottom 200px
+    @media screen and (min-width: 992px)
+      padding-bottom 300px
+    @media screen and (min-width: 1240px)
+      padding-top 50rem
+      display block
+      padding-bottom 0
     .logo
       width 325.5px
       height 102.5px
@@ -234,63 +111,73 @@
       margin-bottom 15px
       @media screen and (max-height: 380px) and (max-width: 340px)
         width 300px
-      @media screen and (min-width: 460px) and (min-height: 381px)
-        height 80px
-        width 255px
-      @media screen and (min-height: 381px)  and (min-width: 768px)
-        margin-top 30px
-      @media screen and (min-height: 600px)  and (min-width: 768px)
-        margin-top 30px
-      @media screen and (min-width: 768px) and (min-height: 992px)
-        margin-top 200px
+      @media screen and (min-width: 1024px) and (min-height: 1360px)
         width 651px
         height 205px
-        margin-bottom 40px
-      @media screen and (min-width: 992px) and (min-height: 640px)
-        width 400px
-        height 125px
-      @media screen and (min-width: 992px) and (min-height: 900px)
-        width 651px
-        height 205px
-      @media screen and (min-width: 992px) and (min-height: 1300px)
-        margin-top 200px
-      @media screen and (min-width: 1300px) and (min-height: 768px)
-        margin-top 0px
-      @media screen and (min-width: 1400px) and (min-height: 900px)
-        width 400px
-        height 125px
-      @media screen and (min-width: 992px) and (min-height: 992px)
-        margin-top 50px
-      @media screen and (min-width: 1400px) and (min-height: 992px)
-        width 651px
-        height 205px
-        margin-top 15px
-      @media screen and (min-width: 1550px) and (min-height: 992px)
-        margin-top -30px
-      @media screen and (min-width: 1600px) and (min-height: 950px)
-        width 651px
-        height 205px
-      @media screen and (min-width: 1650px) and (min-height: 992px)
-        margin-top 0
+      @media screen and (min-width: 1240px)
+        width 651rem
+        height 205rem
     h1
       display inline-block
       vertical-align middle
       background #111
       color #c2c2c2
       font-size 18px
-      @media screen and (min-height: 500px) and (min-width: 768px)
-        display inline-block
-      @media screen and (min-width: 992px) and (min-height: 640px)
-        font-size 24px
-      @media screen and (min-width: 992px) and (min-height: 900px)
-        font-size 32px
-      @media screen and (min-width: 992px) and (min-height: 1300px)
+      @media screen and (min-width: 1024px) and (min-height: 1360px)
         font-size 38px
-      @media screen and (min-width: 768px) and (min-height: 992px)
-        font-size 38px
-      @media screen and (min-width: 1400px) and (min-height: 900px)
-        font-size 24px
-      @media screen and (min-width: 1400px) and (min-height: 992px)
-        font-size 38px
-      @media screen and (min-width: 1600px) and (min-height: 950px)
-        font-size 38px
+      @media screen and (min-width: 1240px)
+        font-size 38rem
+    h1,
+    .logo
+      transform translateY(-25px)
+      transition transform .5s cubic-bezier(.25,-0.55,.25,.25), opacity .5s cubic-bezier(.25,-0.55,.25,.25)
+      opacity 0
+    .logo
+      section.active &
+        transform translateY(0px)
+        opacity 1
+        transition-delay .3s
+    h1
+      section.active &
+        transform translateX(0px)
+        opacity 1
+        transition-delay .5s
+  .mouse-down,
+  .shapes
+    opacity 0
+    transition opacity .5s cubic-bezier(.25,-0.55,.25,.25)
+    section.active &
+      opacity 1 !important
+      transition-delay .5s
+
+.fullpage-wrapper {
+  width: 100%!important;
+  transform: none!important;
+}
+
+.fp-section {
+  width: 100%!important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: all .7s ease-in-out;
+}
+
+.fp-section.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+html, body, #main
+  height 100%
+  .section
+    height 100%
+body
+  overflow hidden
+.fp-viewing-0
+  #works
+    z-index 0 !important

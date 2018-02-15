@@ -9,7 +9,7 @@ html(lang="ru").no-js
     link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=cyrillic" rel="stylesheet")
     link(rel="stylesheet" href="css/vendor.css")
     link(rel="stylesheet" href="css/app.css")
-    //- script(async src="js/modernizr.js")
+    script(async src="js/modernizr.js")
 
   body
     #works
@@ -32,41 +32,37 @@ html(lang="ru").no-js
                 h2 Eventbooking
                 h2 Heineken
               .descriptions
-                .item.current Дизайн и разработка сайта современного магазина-бара.
+                .item.current
+                  p#split-work-1 Дизайн и разработка сайта современного магазина-бара.
                 .item
-                  p Дизайн и разработка сайта старейшего российского журнала по ремонту и оформлению интерьера.
-                  p Проект выполнен для агентства: <br>Burda Media
+                  p#split-work-2 Дизайн и разработка сайта старейшего российского журнала по ремонту и оформлению интерьера. <br><br>Проект выполнен для агентства: <br>Burda Media
                 .item
-                  p Разработка сайта легендарного мужского журнала.
-                  p Проект выполнен для агентства: <br>Burda Media
+                  p#split-work-3 Разработка сайта легендарного мужского журнала. <br><br>Проект выполнен для агентства: <br>Burda Media
                 .item
-                  p Дизайн и разработка мобильной 3D игры нового многоцелевого вертолёта Ка-62.
-                  p Проект выполнен для агентства: <br>Great Gonzo
+                  p#split-work-4 Дизайн и разработка мобильной 3D игры нового многоцелевого вертолёта Ка-62. <br><br>Проект выполнен для агентства: <br>Great Gonzo
                 .item
-                  p Разработка сайта и интерактивных стоек для торгового центра.
-                  p Проект выполнен для агентства: <br>Nectarin
+                  p#split-work-5 Разработка сайта и интерактивных стоек для торгового центра. <br><br>Проект выполнен для агентства: <br>Nectarin
                 .item
-                  p Дизайн и разработка мобильной корпоративной газеты для сотрудников банка.
-                  p Проект выполнен для агентства: <br>Great Gonzo
+                  p#split-work-6 Дизайн и разработка мобильной корпоративной газеты для сотрудников банка. <br><br>Проект выполнен для агентства: <br>Great Gonzo
                 .item
-                  p Разработка сайта противовирусного препарата.
-                  p Проект выполнен для агентства: <br>Deluxe Interactive
-                .item Дизайн и разработка сайта доставки суши.
-                .item Разработка маркетплейса услуг для мероприятий
+                  p#split-work-7 Разработка сайта противовирусного препарата. <br><br>Проект выполнен для агентства: <br>Deluxe Interactive
                 .item
-                  p Разработка промо сайта с интеграцией смс-механики.
-                  p Проект выполнен для агентства: <br>Boost Team
+                  p#split-work-8 Дизайн и разработка сайта доставки суши.
+                .item
+                  p#split-work-9 Разработка маркетплейса услуг для мероприятий
+                .item
+                  p#split-work-10 Разработка промо сайта с интеграцией смс-механики. <br><br>Проект выполнен для агентства: <br>Boost Team
               .links
-                a(class="current" href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
-                a(href="#") Перейти на сайт
+                a(class="current" href="http://xlebvino.com/" target="_blank") Перейти на сайт
+                a(href="https://www.ivd.ru/" target="_blank") Перейти на сайт
+                a(href="http://playboyrussia.com/" target="_blank") Перейти на сайт
+                a(href="#")
+                a(href="http://vesna-trk.ru/" target="_blank") Перейти на сайт
+                a(href="#")
+                a(href="http://amixin.ru/" target="_blank") Перейти на сайт
+                a(href="http://vabisabi.ru/" target="_blank") Перейти на сайт
+                a(href="https://eventbooking.ru/" target="_blank") Перейти на сайт
+                a(href="#")
             .works-nav
               ul
                 li: a(id="w-1" class="current" href="#") 1
@@ -90,7 +86,20 @@ html(lang="ru").no-js
           .image(style="background-image: url('images/work-8.jpg')")
           .image(style="background-image: url('images/work-9.jpg')")
           .image(style="background-image: url('images/work-10.jpg')")
+        .work-preview-mobile
+          .image(class="current" style="background-image: url('images/work-small-1.jpg')")
+          .image(style="background-image: url('images/work-small-2.jpg')")
+          .image(style="background-image: url('images/work-small-3.jpg')")
+          .image(style="background-image: url('images/work-small-4.jpg')")
+          .image(style="background-image: url('images/work-small-5.jpg')")
+          .image(style="background-image: url('images/work-small-6.jpg')")
+          .image(style="background-image: url('images/work-small-7.jpg')")
+          .image(style="background-image: url('images/work-small-8.jpg')")
+          .image(style="background-image: url('images/work-small-9.jpg')")
+          .image(style="background-image: url('images/work-small-10.jpg')")
         .work-layout
+        .work-canvas-layout
+          canvas
     #services-nav
       .services-progress
         .progress-bar
@@ -110,9 +119,6 @@ html(lang="ru").no-js
           .item: #s3
           .item: #s4
           .item: #s5
-
-
-
     #header
       .wrapper
         .logo: a(href="#"): img(src="images/logo.png" alt="")
@@ -127,19 +133,19 @@ html(lang="ru").no-js
       // Lead screen
       section.section.fp-noscroll
         .m_lead
-          .shapes
-            .sun(data-parallaxify-range-x="-10" data-parallaxify-range-y="-10")
+          .shapes(style="opacity: 0")
+            //- .sun
               .core: img(src="images/sun-core.png" alt="")
               .lights: img(src="images/sun-lights.png" alt="")
             .layers
-              .layer.low: img(src="images/1.png" alt="")
-              .layer.bot: img(src="images/2.png" alt="")
-              .layer.mid: img(src="images/3.png" alt="")
-              .layer.top: img(src="images/4.png" alt="")
+              .layer.low: img(src="images/low.svg" alt="")
+              .layer.bot: img(src="images/bot.svg" alt="")
+              .layer.mid: img(src="images/mid.svg" alt="")
+              .layer.top: img(src="images/top.svg" alt="")
           .text
             .logo
-            h1 Лучший диджитал аутсорс продакшн <br>для агенств интеграторов и стартапов
-          .mouse-down
+            h1#split-lead Лучший диджитал аутсорс продакшн <br>для агенств интеграторов и стартапов
+          .mouse-down(style="opacity: 0")
       // Productions
       section.section.fp-noscroll.prod-index
         .m_productions
@@ -148,106 +154,108 @@ html(lang="ru").no-js
               a(href="http://www.cossa.ru/ok3/81540/" target="_blank")
                 .icon
                   #prod-1
-                .label Премия Рунета <br>2013
+                .label#split-1 Премия Рунета <br>2013
             .item
               a(href="http://www.ruward.ru/mobile-ratings/apps4all-2016-1/" target="_blank")
                 .icon
                   #prod-2
-                .label 17 место в рейтинге <br>мобильных разработчиков <br>2016
+                .label#split-2 17 место в рейтинге <br>мобильных разработчиков <br>2016
             .item
               a(href="https://tagline.ru/outsource-rating/" target="_blank")
                 .icon
                   #prod-3
-                .label 9 место в рейтинге <br>tagline в 2017ом
+                .label#split-3 9 место в рейтинге <br>tagline в 2017ом
             .item
               .icon
                 #prod-4
-              .label 15 специалистов <br>в штате
+              .label#split-4 15 специалистов <br>в штате
             .item
               .icon
                 #prod-5
-              .label Работаем  по NDA
+              .label#split-5 Работаем  по NDA
             .item
               .icon
                 #prod-6
-              .label 5 лет на рынке
+              .label#split-6 5 лет на рынке
 
       // Services
-      section.section
+      section.section.fp-noscroll
         .m_services
           .wrapper
             .text
               .number 01
               h2 Проектирование
-              p Разрабатываем подробные технические задания и интерактивные прототипы в Axure.
-        .pricelist: a(href="#"): span Наши цены
-      section.section
+              p#split-serv-1 Разрабатываем подробные технические задания и интерактивные прототипы в Axure.
+        .pricelist: a(href="Rates.pdf" target="_blank"): span Наши цены
+      section.section.fp-noscroll
         .m_services
           .wrapper
             .text
               .number 02
               h2 Дизайн
-              p Разрабатываем дизайн интерфейса адаптивных сайтов и мобильных приложений.
-        .pricelist: a(href="#"): span Наши цены
-      section.section
+              p#split-serv-2 Разрабатываем дизайн интерфейса адаптивных сайтов и мобильных приложений.
+        .pricelist: a(href="Rates.pdf"): span Наши цены
+      section.section.fp-noscroll
         .m_services
           .wrapper
             .text
               .number 03
               h2 Веб разработка
-              p Разрабатываем адаптивные интернет-магазины, промо-сайты, лэндинги, порталы. <br>Основной стек: php7, 1С-Битрикс, Yii2, jquery, angularjs, pug, scss.
-        .pricelist: a(href="#"): span Наши цены
-      section.section
+              p#split-serv-3 Разрабатываем адаптивные интернет-магазины, промо-сайты, лэндинги, порталы. <br>Основной стек: php7, 1С-Битрикс, Yii2, jquery, angularjs, pug, scss.
+        .pricelist: a(href="Rates.pdf"): span Наши цены
+      section.section.fp-noscroll
         .m_services
           .wrapper
             .text
               .number 04
               h2 Мобильная разработка
-              p Разрабатываем нативные мобильные приложения и 3d игры. <br>Основной стек: Java, Objective-C, Unity3d.
-        .pricelist: a(href="#"): span Наши цены
-      section.section
+              p#split-serv-4 Разрабатываем нативные мобильные приложения и 3d игры. <br>Основной стек: Java, Objective-C, Unity3d.
+        .pricelist: a(href="Rates.pdf"): span Наши цены
+      section.section.fp-noscroll
         .m_services
           .wrapper
             .text
               .number 05
               h2 Интеграции
-              p Проводим интеграцию с любыми внешними системами по API, в том числе - CRM/ERP, платежными системами, социальными сетями, sms/e-mail сервисами, билетными сервисами, gps трекерами и даже космическими спутниками.
-        .pricelist: a(href="#"): span Наши цены
+              p#split-serv-5 Проводим интеграцию с любыми внешними системами по API, в том числе - CRM/ERP, платежными системами, социальными сетями, sms/e-mail сервисами, билетными сервисами, gps трекерами и даже космическими спутниками.
+        .pricelist: a(href="Rates.pdf"): span Наши цены
       // Portfolio
-      section.section
-      section.section
-      section.section
-      section.section
-      section.section
-      section.section
-      section.section
-      section.section
-      section.section
-      section.section
+      section.section.fp-noscroll
+      section.section.fp-noscroll
+      section.section.fp-noscroll
+      section.section.fp-noscroll
+      section.section.fp-noscroll
+      section.section.fp-noscroll
+      section.section.fp-noscroll
+      section.section.fp-noscroll
+      section.section.fp-noscroll
+      section.section.fp-noscroll
 
       // Contacts
       section.section.fp-auto-height-responsive
         .m_contacts
+          .contacts-canvas
+            canvas
           .contacts-list
             .map-layout
               #map
               .map-bg
             .list
-              .locate Москва, ул. Новодмитровская 2к1
+              .locate Москва, ул. Б. Новодмитровская 36, стр. 2 FLACON
               .map-open: a(id="toggle-map" href="#") Посмотреть на карте
               ul
-                li: a(class="icon-tel"        href="tel:+74956789999") + 7 (495) 678 99 99
+                li: a(class="icon-tel"        href="tel:+74993944098") + 7 (499) 394 40 98
                 li: a(class="icon-tel"        href="tel:+79267799800") + 7 (926) 77 99 800
-                li: a(class="icon-viber"      href="https://api.whatsapp.com/send?phone=79127799800") + 7 (926) 77 99 800
+                li: a(class="icon-viber"      href="https://api.whatsapp.com/send?phone=79267799800") + 7 (926) 77 99 800
                 li: a(class="icon-telegram"   href="http://telegram.me/dreamheads_ru") dreamheads_ru
                 li: a(class="icon-skype"      href="skype:this_is_my_dream_?chat") this_is_my_dream_
                 li: a(class="icon-email"      href="mailto:info@dreamheads.ru") info@dreamheads.ru
                 li: a(class="icon-facebook"   href="https://www.facebook.com/Dreamheads/" target="_blank") dreamheads_ru
                 li: a(class="icon-instagram"  href="https://www.instagram.com/dreamheads_ru/" target="_blank") dreamheads_ru
-                li: a(class="icon-requisites" href="#") Реквизиты
+                li: a(class="icon-requisites" href="Карточка-компании-ООО-Дримхэдс-14.12.2017.pdf" target="_blank") Реквизиты
             .back-to-list: a(href="#")
           .contacts-form
-            form(name="lead-form")
+            form(name="lead-form" enctype='multipart/form-data')
               .title Свяжитесь с нами:
               .form-row
                 label
@@ -274,22 +282,27 @@ html(lang="ru").no-js
                   .attach
                     label(for="attach-form-input" onclick="")
                       .attach-inp
-                        input(type="file" id="attach-form-input" name="attach-form-input")
+                        input(type="file" id="attach-form-input" multiple="multiple" name="attach-form-input")
                       .attach-icon
                       .attach-label Приложить файл
                   .submit
                     button(type="submit") Отправить
+                .attached-file: .value
+                .success-submit Ваше письмо отправлено, и мы УЖЕ начали работу над Вашим проектом.
 
 
     // Javascript
     script(src="js/jquery-3.2.1.min.js")
     script(src="js/vendor.js")
-    //- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ_pqZOmCOJZ2acwP3OYbAZDF89BEVe3k&callback=initMap" async defer)
-    //- script.
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ_pqZOmCOJZ2acwP3OYbAZDF89BEVe3k&callback=initMap" async defer)
+    script.
       var map;
+      var markers = [];
+
       function initMap() {
+        var coord = {lat: 55.804878, lng: 37.585333};
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 55.805024, lng: 37.589075},
+          center: coord,
           zoom: 17,
           scrollwheel: false,
           navigationControl: false,
@@ -476,10 +489,37 @@ html(lang="ru").no-js
 
         });
 
-        var marker = new google.maps.Marker({
-            position: {lat: 55.805024, lng: 37.589075},
+        map.addListener('click', function(event) {
+          addMarker(event.latLng);
+        });
+
+        addMarker(coord);
+        function addMarker(location) {
+          var marker = new google.maps.Marker({
+            position: coord,
             map: map,
             icon: 'images/marker.png'
+          });
+          markers.push(marker);
+        }
+        function setMapOnAll(map) {
+          for (var i = 0; i < markers.length; i++) {
+            markers[i].setMap(map);
+          }
+        }
+        function clearMarkers() {
+          setMapOnAll(null);
+        }
+        function showMarkers() {
+          setMapOnAll(map);
+        }
+        clearMarkers();
+
+        $('#toggle-map').on('click', function(){
+          showMarkers();
+        });
+        $('.back-to-list').on('click', function(){
+          clearMarkers();
         });
       }
     script(src="js/app.js")

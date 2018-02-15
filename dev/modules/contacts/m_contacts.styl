@@ -25,6 +25,18 @@
       display block
       width 100%
       height 100%
+  .contacts-canvas
+    transition transform .3s ease-in
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    z-index 10
+    @media screen and (max-width: 567px)
+      display none !important
+    &.anim-right
+      transform translateX(100%)
   .contacts-list,
   .contacts-form
     @media screen and (min-width: 568px)
@@ -39,8 +51,10 @@
       position absolute
       left 0
       top 0
-      width 100%
+      width 200%
       height 100%
+      @media screen and (max-width: 567px)
+        width 100%
       .map-bg
         @media screen and (min-width: 568px)
           position absolute
@@ -82,6 +96,8 @@
         color #b1b1b1
         @media screen and (min-width: 1024px)
           font-size 30px
+        @media screen and (min-width: 1240px)
+          font-size 30rem
       .map-open
         padding 5px 0
         a
@@ -94,6 +110,8 @@
         margin-top 15px
         @media screen and (min-width: 1024px)
           margin-top 45px
+        @media screen and (min-width: 1240px)
+          margin-top 45rem
       li
         padding-left 35px
         @media screen and (min-width: 768px) and (min-height: 768px)
@@ -179,20 +197,33 @@
               background-position -350px -150px
 
   .contacts-form
-    background #111
+    // background #111
     padding 30px 0
     color #b3b3b3
+    position relative
+    z-index 15
+    transition transform .3s ease-in
+    &.anim-right
+      @media screen and (min-width: 568px)
+        transform translateX(100%)
     form
       padding 0 30px
       max-width 420px
       margin-left auto
       margin-right auto
+      position relative
+      z-index 1
+      @media screen and (min-width: 1240px)  and (max-height: 690px)
+        padding-top 80rem
     .title
       font-size 24px
       text-align left
       @media screen and (min-height: 900px)
         font-size 40px
         margin-bottom 40px
+      @media screen and (min-width: 1240px)
+        font-size 40rem
+        margin-bottom 40rem
     .form-row
       margin-top 15px
       > label
@@ -235,6 +266,26 @@
           textarea
             resize none
             min-height 100px
+      .attached-file
+        color #b0914f
+        text-align left
+        margin-top 15px
+        line-height 20px
+        // height 20px
+        text-align center
+        position relative
+        @media SM
+          padding-left 35px
+          text-align left
+        .attached
+          @media screen and (max-width: 767px)
+            // position absolute
+            left 0
+            top -120px
+            width 100%
+      .success-submit
+        display none
+        color #b0914f
       .bottom
         clearfix()
         @media screen and (min-height: 900px)
@@ -297,3 +348,8 @@
               color #d1ab59
               text-decoration underline
               line-height 23px
+.fp-viewing-17
+  #header .logo
+    visibility hidden
+    opacity 0
+    transition opacity 1s ease-in
