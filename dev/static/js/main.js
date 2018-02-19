@@ -53,17 +53,17 @@ $(function() {
       $('.m_productions .item').removeClass('is-show-border is-show');
     }
 
-    p1 = new Vivus('prod-1', {duration: 50, file: 'images/prod-1.svg'});
-    p2 = new Vivus('prod-2', {duration: 50, file: 'images/prod-2.svg'});
-    p3 = new Vivus('prod-3', {duration: 50, file: 'images/prod-3.svg'});
-    p4 = new Vivus('prod-4', {duration: 50, file: 'images/prod-4.svg'});
-    p5 = new Vivus('prod-5', {duration: 50, file: 'images/prod-5.svg'});
-    p6 = new Vivus('prod-6', {duration: 50, file: 'images/prod-6.svg'});
-    s1 = new Vivus('s1', {duration: 200, file: 'images/s-1.svg'});
-    s2 = new Vivus('s2', {duration: 200, file: 'images/s-2.svg'});
-    s3 = new Vivus('s3', {duration: 200, file: 'images/s-3.svg'});
-    s4 = new Vivus('s4', {duration: 200, file: 'images/s-4.svg'});
-    s5 = new Vivus('s5', {duration: 200, file: 'images/s-5.svg'});
+    p1 = new Vivus('prod-1', {duration: 35, file: 'images/prod-1.svg'});
+    p2 = new Vivus('prod-2', {duration: 35, file: 'images/prod-2.svg'});
+    p3 = new Vivus('prod-3', {duration: 35, file: 'images/prod-3.svg'});
+    p4 = new Vivus('prod-4', {duration: 35, file: 'images/prod-4.svg'});
+    p5 = new Vivus('prod-5', {duration: 35, file: 'images/prod-5.svg'});
+    p6 = new Vivus('prod-6', {duration: 35, file: 'images/prod-6.svg'});
+    s1 = new Vivus('s1', {duration: 100, file: 'images/s-1.svg'});
+    s2 = new Vivus('s2', {duration: 100, file: 'images/s-2.svg'});
+    s3 = new Vivus('s3', {duration: 100, file: 'images/s-3.svg'});
+    s4 = new Vivus('s4', {duration: 100, file: 'images/s-4.svg'});
+    s5 = new Vivus('s5', {duration: 100, file: 'images/s-5.svg'});
 
 
     // Инициализация fp.js
